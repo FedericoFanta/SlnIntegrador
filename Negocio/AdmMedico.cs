@@ -8,12 +8,12 @@ using Entidades.ModelsBase;
 
 namespace Negocio
 {
-    public class AdmMedico
+    public static class AdmMedico
     {
 
-        List<Medico> medicos;
+        static List<Medico> medicos;
 
-        public List<Medico> Listar()
+        public static List<Medico> Listar()
         {
             medicos = new List<Medico>();
             medicos.Add(new Medico() { Id=0, Nombre = "Dereck", Apellido = "Shepherd", Domicilio = "calle asd 123", Telefono = "32432432", Email = "algo@hotmail.com", Especialidad = "Cirujano", Matricula = "C423" });
@@ -23,7 +23,7 @@ namespace Negocio
             return medicos;
         }
 
-        public List<Medico> Listar(string especialidad)
+        public static List<Medico> Listar(string especialidad)
         {
             
             List<Medico> tempMedicos = new List<Medico> { };
@@ -40,17 +40,17 @@ namespace Negocio
             //return medicos.FindAll(m => m.Especialidad.Equals( especialidad));
         }
 
-        public int Insertar(Medico medico)
+        public static int Insertar(Medico medico)
         {
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             return 0;
         }
 
-        public Medico TraerUno(int id)
+        public static Medico TraerUno(int id)
         {
             return null;
         }

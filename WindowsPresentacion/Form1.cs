@@ -12,14 +12,17 @@ using Entidades.ModelsBase;
 using Negocio;
 
 
+
+
 namespace WindowsPresentacion
 {
     public partial class Form1 : Form
     {
 
-        AdmMedico admMedicos = new AdmMedico();
+        /*AdmMedico admMedicos = new AdmMedico();
         AdmPaciente admPacientes = new AdmPaciente();
         AdmHabitacion admHabitaciones = new AdmHabitacion();
+        */
 
         public Form1()
         {
@@ -28,10 +31,10 @@ namespace WindowsPresentacion
 
         private void btnVerMedicos_Click(object sender, EventArgs e)
         {
-            gridDatos.DataSource = admMedicos.Listar();
+            gridDatos.DataSource = AdmMedico.Listar();
 
             lstMedicosClinicos.Items.Clear();
-            foreach (Medico medico in admMedicos.Listar("Clinico"))
+            foreach (Medico medico in AdmMedico.Listar("Clinico"))
             {
                 lstMedicosClinicos.Items.Add(medico.Nombre + " " + medico.Apellido);
             }
@@ -39,9 +42,9 @@ namespace WindowsPresentacion
 
         private void btnVerPacientes_Click(object sender, EventArgs e)
         {
-            gridDatos.DataSource = admPacientes.Listar();
+            gridDatos.DataSource = AdmPaciente.Listar();
 
-            foreach (Habitacion habitacion in admHabitaciones.Listar())
+            foreach (Habitacion habitacion in AdmHabitacion.Listar())
             {
                 lstHabitaciones.Items.Add("Número: " + habitacion.Numero + ", estado: " + habitacion.Estado);
             }

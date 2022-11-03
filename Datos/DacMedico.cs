@@ -8,32 +8,31 @@ using Entidades.ModelsBase;
 
 namespace Datos
 {
-    public class DacMedico
+    public static class DacMedico
     {
+        static List<Medico> medicos;
 
-        List<Medico> medicos;
-
-        public List<Medico> Select()
+        public static List<Medico> Select()
         {
             return null;
         }
 
-        public List<Medico> Select(string especialidad)
+        public static List<Medico> Select(string especialidad)
         {
             return null;
         }
 
-        public int Insert(Medico medico)
+        public static int Insert(Medico medico)
         {
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             return 0;
         }
 
-        public Medico SelectById(int id)
+        public static Medico SelectById(int id)
         {
             return null;
         }
