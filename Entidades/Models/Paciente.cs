@@ -14,12 +14,13 @@ namespace Entidades
         {
         }
 
-        public Paciente(int id, string nombre, string apellido, string domicilio, string telefono, string email) : base(id, nombre, apellido, domicilio, telefono, email)
+        public Paciente(int id, string nombre, string apellido, string domicilio, string telefono, string email, DateTime fechaNacimiento) : base(id, nombre, apellido, domicilio, telefono, email)
         {
 
         }
 
-        public string NroHistoriaClinica { get; set; }  
-        
+        public string NroHistoriaClinica { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+
     }
 }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayudantes\UtilidadesFechas.cs" />
     <Compile Include="ModelsBase\Individuo.cs" />
     <Compile Include="Models\Clinica.cs" />
     <Compile Include="Models\Director.cs" />
@@ -50,5 +51,6 @@
     <Compile Include="Models\Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
