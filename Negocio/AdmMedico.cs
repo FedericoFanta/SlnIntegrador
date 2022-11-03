@@ -16,10 +16,10 @@ namespace Negocio
         public List<Medico> Listar()
         {
             medicos = new List<Medico>();
-            medicos.Add(new Medico() { Id=0, Nombre = "Shepard", Apellido = "Alex", Domicilio = "calle asd 123", Telefono = "32432432", Email = "algo@hotmail.com", Especialidad = "Cirujano", Matricula = "C423" });
-            medicos.Add(new Medico() { Id = 1, Nombre = "Meredyh", Apellido = "Greys", Domicilio = "calle 32 ", Telefono = "435435", Email = "algo@hotmail.com", Especialidad = "Traumatólogo", Matricula = "F534" });
-            medicos.Add(new Medico() { Id = 2, Nombre = "Lisi", Apellido = "Zape", Domicilio = "calle siempreviva", Telefono = "767777", Email = "algo@hotmail.com", Especialidad = "Clínico", Matricula = "FG213" });
-            medicos.Add(new Medico() { Id = 3, Nombre = "Raul", Apellido = "Alexis", Domicilio = "calle lunar", Telefono = "34534543", Email = "lalgo@hotmail.com", Especialidad = "Jefe cardiologo", Matricula = "S2456" });
+            medicos.Add(new Medico() { Id=0, Nombre = "Dereck", Apellido = "Shepherd", Domicilio = "calle asd 123", Telefono = "32432432", Email = "algo@hotmail.com", Especialidad = "Cirujano", Matricula = "C423" });
+            medicos.Add(new Medico() { Id = 1, Nombre = "Meredith", Apellido = "Grey", Domicilio = "calle 32 ", Telefono = "435435", Email = "algo@hotmail.com", Especialidad = "Clinico", Matricula = "F534" });
+            medicos.Add(new Medico() { Id = 2, Nombre = "Izzie", Apellido = "Stevens", Domicilio = "calle siempreviva", Telefono = "767777", Email = "algo@hotmail.com", Especialidad = "Clinico", Matricula = "FG213" });
+            medicos.Add(new Medico() { Id = 3, Nombre = "Miranda", Apellido = "Bailey", Domicilio = "calle lunar", Telefono = "34534543", Email = "lalgo@hotmail.com", Especialidad = "Jefe cardiologo", Matricula = "S2456" });
             return medicos;
         }
 

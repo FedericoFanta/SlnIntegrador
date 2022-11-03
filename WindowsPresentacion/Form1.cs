@@ -31,7 +31,7 @@ namespace WindowsPresentacion
             gridDatos.DataSource = admMedicos.Listar();
 
             lstMedicosClinicos.Items.Clear();
-            foreach (Medico medico in admMedicos.Listar("Clínico"))
+            foreach (Medico medico in admMedicos.Listar("Clinico"))
             {
                 lstMedicosClinicos.Items.Add(medico.Nombre + " " + medico.Apellido);
             }
@@ -40,14 +40,13 @@ namespace WindowsPresentacion
         private void btnVerPacientes_Click(object sender, EventArgs e)
         {
             gridDatos.DataSource = admPacientes.Listar();
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
             foreach (Habitacion habitacion in admHabitaciones.Listar())
             {
                 lstHabitaciones.Items.Add("Número: " + habitacion.Numero + ", estado: " + habitacion.Estado);
             }
         }
+
+
     }
 }
